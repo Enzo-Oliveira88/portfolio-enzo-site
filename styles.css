@@ -430,4 +430,174 @@ text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
     
     
-}   
+}
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 1rem 0.5rem;
+    }
+
+    .menu {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .sou {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sobre-titulo,
+    .habilidades-titulo {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .projetos-titulo,
+    .contato-titulo {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .habilidades-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .habilidade-card {
+        padding: 1rem;
+    }
+
+    .habilidade-icone {
+        font-size: 2rem;
+    }
+
+    .habilidade-card h3 {
+        font-size: 1rem;
+    }
+
+    .habilidade-card p {
+        font-size: 0.8rem;
+    }
+
+    .sobre,
+    .habilidades,
+    .projetos,
+    .contato {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre-caixa {
+        padding: 1.5rem 1rem;
+    }
+
+    .projetos-card {
+        align-items: center;
+    }
+
+    .info-projetos {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .paragrafo-projetos {
+        padding: 0.5rem 1rem 1rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .tech-badge {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .formulario-contato {
+        max-width: 100%;
+    }
+
+    .links-redes {
+        gap: 1rem;
+    }
+
+    .rede-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacao {
+        padding: 0.8rem 0.25rem;
+    }
+
+    .menu {
+        gap: 0.25rem;
+    }
+
+    .menu-link {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .sou {
+        font-size: 0.9rem;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .sobre-titulo,
+    .habilidades-titulo,
+    .projetos-titulo,
+    .contato-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .projetos-card:hover {
+        transform: translateY(-4px) scale(1.02);
+    }
+
+    .habilidades-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .habilidade-card p {
+        font-size: 0.75rem;
+    }
+
+    .paragrafo-projetos {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+    .info-projetos {
+        font-size: 0.9rem;
+    }
+}
